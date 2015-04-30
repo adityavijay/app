@@ -1,0 +1,13 @@
+// Block Lists
+
+.block-list{
+
+    list-style: none;
+    margin-left: 0;
+
+
+     > li {
+        padding: 10px;
+        border-top: 1px solid $grey-e6;
+    }
+}

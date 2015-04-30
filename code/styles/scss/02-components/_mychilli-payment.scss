@@ -1,0 +1,18 @@
+.panel
+{
+	&.summary
+	{
+		padding: 30px 30px 0 30px;
+
+		.summary-item-img
+		{
+			width: 119px;
+		}
+
+		.info-list
+		{
+			list-style-position: inside;
+		}
+	}
+}
+

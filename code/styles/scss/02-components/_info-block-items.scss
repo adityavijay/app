@@ -1,0 +1,29 @@
+// Info block item
+// such as How It Works on Stag home page or MyChilli Home page (before reserving)
+
+.info-block__item
+{
+	.item-img
+	{
+		width: 190px;
+		height: 190px;
+		margin: 0 auto 40px auto;
+	}
+
+	.item-img-title
+	{
+		font-size: $h3-size;
+	}
+
+	.item-img-subtitle
+	{
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+
+	.btn	
+	{
+		width: 166px;
+	}
+}
+

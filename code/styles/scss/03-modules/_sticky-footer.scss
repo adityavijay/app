@@ -1,0 +1,24 @@
+.sticky-footer-wrapper
+{
+	position: fixed;
+	width: 100%;	
+	background: $white;
+	z-index: 10;
+	bottom: 0px;
+}
+
+.sticky-footer
+{
+	padding: 10px 40px;
+	@include clearfix;	
+	width: 100%;
+	.left-col
+	{
+		float: left;
+	}
+
+	.right-col
+	{
+		float: right;
+	}
+}

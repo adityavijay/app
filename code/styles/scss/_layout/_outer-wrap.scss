@@ -1,0 +1,14 @@
+// Outer Wrap
+
+.outer-wrap {
+    width: 100%;
+    overflow: hidden;
+
+    &.home {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+}

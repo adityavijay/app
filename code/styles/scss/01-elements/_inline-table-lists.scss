@@ -1,0 +1,27 @@
+// Progress list (list of icons at top of Stag Plans and Invite guests modal box)
+
+.inline-table-list {
+    margin: 0 auto;
+    display: table;
+    list-style: none;
+
+    .list-item, .list-seperator {
+        display: table-cell;
+    }
+
+    .list-item {
+        text-align: center;
+        list-style: none;
+        vertical-align: middle;
+    }
+
+    .bg-img {
+        margin: 0 auto;
+    }
+
+    .list-seperator {
+        padding-top: 30px;
+        color: $grey-cc;
+    }
+
+}

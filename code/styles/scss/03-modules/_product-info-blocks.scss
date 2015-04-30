@@ -1,0 +1,48 @@
+// Info Slider blocks
+// Half block with info text such as a Product, and the other half has a flexslider
+
+.product-info-block {
+    position: relative;
+}
+
+.info-details-wrapper {
+    display: table-cell;
+
+    .info-details, .info-media {
+        display: table-cell;
+    }
+
+    .info-details {
+        text-align: center;
+        padding: 20px 20px 0 0;
+
+        .info-details-name {
+            font-family: 'proxima-nova-bold';
+        }
+
+        .info-details-description {
+            margin-top: 20px;
+        }
+
+        .info-details-footer {
+            // position: absolute;
+            // bottom: 0;
+
+
+
+        }
+    }
+
+}
+
+@media #{$medium} {
+    .info-details-wrapper {
+
+        .info-details {
+            text-align: left;
+
+        }
+
+    }
+}
+

@@ -1,0 +1,157 @@
+// Accommodation List Items
+// For the Add Accommodation section under My Stag Plans
+
+.accommodation__list-item {
+	@include clearfix();
+	border: 1px solid $grey-e5;
+
+	.item-image-container {
+
+	}
+
+	.item-details-wrapper {
+
+	}
+
+}
+
+.accommodation-features {
+
+	.feature-list {
+		margin: 0;
+		list-style-type: none;
+	}
+
+	.list__item {
+
+		width: 30px;
+		height: 30px;
+
+		&.icon {
+			padding: 5px;
+			color: $grey-99;
+			font-size: 18px;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+
+.accommodation-details-wrapper {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.accommodation-details {
+	text-align: center;
+	position: relative;
+	padding: 20px;
+
+	.price-text {
+
+	}
+
+	.price-value {
+		font-size: 26px;
+	}
+}
+
+
+@media #{$screen} {
+	.accommodation__list-item {
+		.item-image-container {
+			display: block;
+			width: 100%;
+		}
+
+		.item-details-wrapper {
+			display: block;
+			text-align: center;
+		}
+
+		.item-details-footer {
+			position: relative;
+			bottom: 0;
+		}
+	}
+
+
+	.accommodation-features {
+
+		.feature-list {
+			margin: 0;
+		}
+
+		.list__item {
+			display: inline-block;
+		}
+	}
+
+	.accommodation-details-wrapper {
+		display: block;
+		width: 100%;
+	}
+}
+
+
+@media #{$medium} {
+	.accommodation__list-item {
+		.item-image-container {
+			width: 288px;
+			display: table-cell;
+		}
+
+		.item-details-wrapper {
+			text-align: left;
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		.item-details-footer {
+			position: absolute;
+			bottom: 20px;
+		}
+	}
+
+	.accommodation-features {
+		float: right;
+
+		.feature-list {
+			margin: 0;
+		}
+
+		.list__item {
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+
+	.accommodation-details-wrapper {
+		border-left: 1px solid $grey-99;
+		width: 180px;
+		display: table-cell;
+		vertical-align: top;
+	}
+}
+
+
+@media #{$large} {
+	.accommodation__list-item {
+		.item-image-container {
+			width: 288px;
+		}
+
+		.item-details-wrapper {
+
+		}
+	}
+
+
+	.accommodation-details-wrapper {
+		width: 250px;
+	}
+
+
+}

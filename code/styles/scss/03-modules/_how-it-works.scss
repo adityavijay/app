@@ -1,0 +1,131 @@
+// How it works module
+
+.how-it-works {
+	padding: 50px 0 80px;
+	text-align: center;
+}
+
+.illustration-steps {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.illustration-step {
+	display: inline-block;
+}
+
+.illustration-img {
+
+}
+
+.illustration-details {
+	padding-left: 15px;
+	text-align: left;
+}
+
+.illustration-title {
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 0 20px;
+}
+
+.illustration-sub-title {
+	font-size: $h7-size;
+	color: $black-66;
+	margin: 0;
+}
+
+
+
+@media #{$screen} {
+	.illustration-steps {
+		margin: 0 auto;
+		padding: 50px 0 0;
+	}
+
+	.illustration-step {
+		display: table;
+		margin-bottom: 25px;
+	}
+
+	.illustration-img,
+	.illustration-details {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.illustration-img {
+		width: 95px;
+		height: 95px;
+		float: left;
+	}
+}
+
+
+@media #{$medium} {
+	.how-it-works {
+
+	}
+
+	.illustration-steps {
+		text-align: center;
+		width: 720px;
+		margin-bottom: 0;
+		@include clearfix;
+	}
+
+	.illustration-step {
+		width: 33.33%;
+		float: left;
+		padding: 0 30px 20px;
+	}
+
+	.illustration-img {
+		width: 160px;
+		height: 160px;
+		margin: 0 auto;
+		float: none;
+		display: block;
+	}
+
+	.illustration-details {
+		padding-left: 0;
+		display: block;
+		font-size: $h6-size;
+		text-align: center;
+	}
+
+	.illustration-title {
+		margin: 20px 0;
+		font-size: $h3-size;
+	}
+
+	.illustration-sub-title {
+		font-size: $h6-size;
+	}
+}
+
+@media #{$large} {
+	.illustration-steps {
+		width: 960px;
+
+	}
+
+	.illustration-step {
+		margin-bottom: 0;
+	}
+
+	.illustration-img {
+		width: 190px;
+		height: 190px;
+	}
+
+	.illustration-title {
+
+	}
+
+	.illustration-sub-title {
+		font-size: $h5-size;
+	}
+
+}

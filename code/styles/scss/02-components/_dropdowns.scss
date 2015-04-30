@@ -1,0 +1,29 @@
+
+/*We use file to add dropdown styles*/
+
+.f-dropdown {
+	font-size: 1em;
+	border: none;
+	margin-top: 15px;
+	box-shadow: 0 0 3px rgba(0,0,0, .5);
+
+	>li {
+		font-size: 1em;
+	}
+}
+
+.dropdown-button
+{
+	min-width: 200px;
+	padding: 9px 10px;
+}
+
+.dropdown-arrow
+{
+	float: right;
+}
+
+
+
+
+

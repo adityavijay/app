@@ -1,0 +1,35 @@
+// Page Header Search Bar
+
+.page-header__search-bar {
+    position: absolute;
+    top: -80px;
+    padding: 20px 0;
+    z-index: 97;
+
+    input[type="text"] {
+        width: 345px;
+        display: inline-block;
+    }
+
+    transition: top .3s;
+
+    &.is-shown {
+        top: 130px;
+    }
+
+}
+
+
+@media #{$screen} {
+
+    .page-header__search-bar {
+        display: none;
+    }
+
+}
+
+@media #{$medium} {
+    .page-header__search-bar {
+        display: block;
+    }
+}

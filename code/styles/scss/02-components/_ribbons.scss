@@ -1,0 +1,198 @@
+/*----------includes all classes to create ribbons--------*/
+$small-ribbon-width: 107px;
+$small-ribbon-height: 105px;
+
+$large-ribbon-width: 138px;
+$large-ribbon-height: 136px;
+
+/*ribbon wrapper*/
+.ribbon-wrapper
+{
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+/* large/medium/small ribbon*/
+.large-ribbon
+{
+  width: 138px;
+  height: 136px;
+}
+
+.medium-ribbon
+{
+  width: 120px;
+  height: 118px;
+}
+
+.small-ribbon
+{
+  width: 107px;
+  height: 105px;
+}
+
+/* left/right ribbon*/
+.right-ribbon
+{
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+}
+
+.left-ribbon
+{
+  -webkit-transform: rotate(315deg);
+  -moz-transform:    rotate(315deg);
+  -ms-transform:     rotate(315deg);
+  -o-transform:      rotate(315deg);
+}
+
+.small-ribbon
+{
+  .ribbon,.ribbon-without-3d
+  {
+    height: 27px;
+    line-height: 27px;
+    font-size: $h8-size;
+    width: 149px;
+    // padding-top: 5%;
+  }
+
+  .right-ribbon
+  {
+    margin: 29px -10px;
+  }
+
+  .left-ribbon
+  {
+    margin: 29px -31px;
+  }
+}
+
+.medium-ribbon
+{
+  .ribbon,.ribbon-without-3d
+  {
+    height: 28px;
+    line-height: 28px;
+    font-size: $h7-size;
+    width: 165px;
+  }
+
+  .left-ribbon
+  {
+    margin: 35px -32px;
+  }
+
+  .right-ribbon
+  {
+    margin: 34px -10px;
+  }
+}
+
+.large-ribbon
+{
+  .ribbon, .ribbon-without-3d
+  {
+    // padding-top: 9px;
+    height: 35px;
+    line-height: 35px;
+    font-size: $h6-size;
+    width: 190px;
+  }
+  .left-ribbon
+  {
+    margin: 37px -40px;
+  }
+
+  .right-ribbon
+  {
+    margin: 37px -11px;
+  }
+}
+
+
+/*main ribbon class*/
+.ribbon, .ribbon-without-3d
+{
+  // padding-top: 4%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+
+.ribbon
+{
+  &:before,&:after
+  {
+    content: "";
+    border-top:   3px solid #3E420C;
+    border-left:  3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+  }
+
+  &:before
+  {
+    left: 0;
+  }
+
+  &:after
+  {
+      right: 0;
+  }
+}
+
+//straight ribbons used in accommodation rating and location tagging
+.ribbon-straight-wrapper
+{
+    position: absolute;
+    z-index: 1;
+    left: -6px;
+
+    .ribbon-straight
+    {
+        background: white;
+        min-height: 30px;
+        position: relative;
+        text-align: center;
+        display: table;
+        padding: 7px 14px;
+        .col1,.col2
+        {
+          display: table-cell;
+        }
+        .col1
+        {
+
+        }
+        .col2
+        {
+          text-align: left;
+          padding-top: 1px;
+          .cities
+          {
+            padding-bottom: 3px;
+            &:last-child
+            {
+              padding-bottom: 7px;
+            }
+          }
+        }
+    }
+
+    &:after
+    {
+        content: "";
+        position: absolute;
+        border-width: 0 8px 6px 0;
+        border-color: transparent $black-66 transparent transparent;
+        border-style: solid;
+        height: 6px;
+        width: 0px;
+    }
+}

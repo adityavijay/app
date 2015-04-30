@@ -1,0 +1,69 @@
+.mychilli-home-hello-wrapper
+{  
+	padding: 45px 0;
+	
+	.text
+	{
+		padding-top: 5px;
+		max-width: 800px;
+	}
+
+	.contact-details
+	{
+		.mail
+		{
+			margin-right: 20px;
+			color: $grey-99;
+		}
+	}
+}
+
+@media #{$screen}
+{ 	.mychilli-home-hello-wrapper
+	{ 
+		.img
+		{
+			text-align: center;
+		}
+	}
+}
+
+@media #{$small}
+{   .mychilli-home-hello-wrapper
+	{
+		.img
+		{
+			text-align: right;
+		}
+	}
+}
+
+
+.my-stag-plans
+{	
+	padding:60px 0;
+	
+	.heading
+	{
+		text-align: center;
+		font-size: 26px;
+		color: $grey-80;
+	}
+}
+
+.my-stag-plans--reserved
+{
+	padding-top: 60px;
+	.saved-stag-plan-wrapper
+	{
+		margin: 0px auto;
+	}
+}
+
+.saved-stag-plans__list
+{
+	.data-view__list-item
+	{
+		background: inherit;
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "1,0",
+  "description": "my development",
+  "main": "main.html",
+  "moduleType": [
+    "amd"
+  ],
+  "authors": [
+    "aditya vijay"
+  ],
+  
+  "license": "MIT"
+}

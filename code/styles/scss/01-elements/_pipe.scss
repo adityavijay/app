@@ -1,0 +1,16 @@
+// Pipe separator
+
+.pipe{
+    display: inline-block;
+    font-family: proxima-nova-light;
+    margin: 0 5px;
+
+    &:before {
+        content: "|";
+
+        // width: 1px;
+        // height: 20px;
+        // background: $grey-99;
+
+    }
+}

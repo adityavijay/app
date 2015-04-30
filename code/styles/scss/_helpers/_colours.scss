@@ -1,0 +1,67 @@
+/*-------------------------------------------------------*\
+    Colour helpers, using the Emmet naming convention
+\*-------------------------------------------------------*/
+
+
+
+// Foreground colour helpers
+
+.c-brand { color: $brand !important; }
+.c-black { color: $black !important; }
+.c-black-22 { color: $black-22 !important; }
+.c-black-30 { color: $black-30 !important; }
+
+.c-grey-4d { color: $grey-4d !important; }
+.c-grey-66 { color: $grey-66 !important; }
+.c-grey-80 { color: $grey-80 !important; }
+.c-grey-99 { color: $grey-99 !important; }
+.c-grey-cc { color: $grey-cc !important; }
+.c-grey-e6 { color: $grey-e6 !important; }
+.c-grey-ed { color: $grey-ed !important; }
+.c-grey-f2 { color: $grey-f2 !important; }
+.c-grey-35 { color: $grey-35 !important; }
+.c-grey-c4 { color: $grey-c4 !important; }
+.c-grey-9e { color: $grey-9e !important; }
+.c-grey-a2 { color: $grey-a2 !important; }
+.c-grey-ac { color: $grey-ac !important; }
+.c-grey-8f { color: $grey-8f !important; }
+.c-grey-a0 { color: $grey-a0 !important; }
+.c-grey-a7 { color: $grey-a7 !important; }
+
+.c-white { color: $white !important; }
+
+.c-green-80{ color: $green-80 !important; }
+
+.c-success { color: $success !important; }
+.c-alert { color: $alert !important; }
+.c-cyan { color: $cyan !important; }
+	
+
+// Background colour helpers
+
+.bgc-brand { background-color: $brand !important; }
+.bgc-black { background-color: $black !important; }
+.bgc-black-22 { background-color: $black-22 !important; }
+.bgc-black-30 { background-color: $black-30 !important; }
+.bgc-black-33 { background-color: $black-33 !important; }
+.bgc-black-66 { background-color: $black-66 !important; }
+
+.bgc-grey-4d { background-color: $grey-4d !important; }
+.bgc-grey-66 { background-color: $grey-66 !important; }
+.bgc-grey-80 { background-color: $grey-80 !important; }
+.bgc-grey-99 { background-color: $grey-99 !important; }
+.bgc-grey-cc { background-color: $grey-cc !important; }
+.bgc-grey-e6 { background-color: $grey-e6 !important; }
+.bgc-grey-ed { background-color: $grey-ed !important; }
+.bgc-grey-f2 { background-color: $grey-f2!important; }
+.bgc-grey-9e { background-color: $grey-9e !important; }
+.bgc-grey-f0 { background-color: $grey-f0 !important; }
+.bgc-grey-f9 { background-color: $grey-f9 !important; }
+
+.bgc-white { background-color: $white !important; }
+
+.bgc-success { background-color: $success !important; }
+.bgc-alert { background-color: $alert !important; }
+.bgc-cyan { background-color: $cyan !important; }
+.bgc-green-80{ background-color: $green-80 !important; }
+

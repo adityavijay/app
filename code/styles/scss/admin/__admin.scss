@@ -1,0 +1,16 @@
+// Admin styles for Chilli Sauce web application
+
+@import "_layout/admin-outer-wrap",
+        "_layout/admin-body-content";
+
+
+@import "../vendor/foundation-432/components/switch";
+
+
+// Import Components (smaller blocks)
+@import "02-components/tables",
+        "02-components/admin-controls";
+
+
+// Import Modules (Larger blocks)
+@import "03-modules/admin-page-header";

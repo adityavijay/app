@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    Overlays
+\*------------------------------------*/
+
+.overlay-wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-color: #111;
+	background-color: rgba(17,17,17,.5);
+	filter: alpha(opacity=0);
+	transition: all .3s;
+	z-index: 2;
+
+	&:hover {
+		opacity: 1;
+
+		// .overlay-bg {
+		// 	position: absolute;
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	top: 0;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	background-color: #111;
+		// 	background-color: rgba(17,17,17,.5);
+
+		// }
+
+	}
+}
+
+.overlay-content-wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.overlay-content {
+	display: table-cell;
+	vertical-align: middle;
+}

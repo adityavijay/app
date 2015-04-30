@@ -1,0 +1,25 @@
+// Stat Blocks
+
+.stat-block {
+    padding: 120px 0;
+
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px 0;
+
+    .icon {
+        color: $brand;
+        font-size: $h2-size;
+    }
+}
+
+.stat-item__value {
+    font-size: $h1-size;
+    margin: 20px 0;
+}
+
+.stat-item__text {
+    font-size: $h6-size;
+}

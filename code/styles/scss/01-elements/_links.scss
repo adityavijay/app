@@ -1,0 +1,61 @@
+// Anchor links
+
+a {
+    line-height: 1;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:link, &:visited {
+        color: $grey-80;
+    }
+
+    &:hover {
+        color: $brand;
+    }
+
+    &.grey {
+        &:link, &:visited {
+            color: $grey-80;
+        }
+
+        &:hover {
+            color: $brand;
+        }
+    }
+
+    &.alt {
+
+        &:link, &:visited {
+            color: $cyan;
+        }
+
+        &:hover {
+            color: darken($cyan, 5%);
+        }
+    }
+
+    &.white {
+
+        &:link, &:visited {
+            color: $white;
+        }
+
+        &:hover {
+            color: $brand;
+        }
+    }
+
+    &.brand {
+        &:link, &:visited {
+            color: $brand;
+        }
+
+        &:hover {
+            color: $brand;
+        }
+    }
+
+
+}

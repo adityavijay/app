@@ -1,0 +1,111 @@
+// Image Gallery (Bespoke / Ready Made Packages and Stag Plans)
+
+.image-gallery {
+     display: table;
+     position: relative;
+
+    .main-image {
+        width: 100%;
+    }
+
+    .thumbnail-wrapper {
+        position: relative;
+    }
+
+}
+
+
+@media #{$screen} {
+    .image-gallery {
+
+        .main-image-wrapper {
+            max-width: 415px;
+         }
+
+        .thumbnail-wrapper {
+            // display: block;
+            display: table;
+            padding: 8px 0 0;
+            @include clearfix;
+        }
+
+        .thumb-cell {
+            max-width: 127px;
+            padding-right: 5px;
+            display: table-cell;
+
+            &:first-child {
+                // float: left;
+            }
+
+            &:nth-child(2) {
+                // margin: 0 auto;
+            }
+
+            &:last-child {
+                // float: right;
+                padding-right: 0;
+            }
+        }
+
+    }
+
+}
+
+
+@media #{$small} {
+    .image-gallery {
+
+        .main-image-wrapper,
+        .thumbnail-wrapper {
+
+        }
+
+        .thumbnail-wrapper {
+            vertical-align: middle;
+            padding: 0 0 0 8px;
+            display: table-cell;
+        }
+
+        .main-image-wrapper {
+            max-width: 505px;
+            display: table-cell;
+        }
+
+
+        .thumb-cell {
+            max-width: 155px;
+            padding: 0;
+
+            &:first-child, &:last-child {
+                position: absolute;
+            }
+
+            &:first-child {
+                top: 0;
+                // float: none;
+            }
+
+            &:last-child {
+                bottom: 0;
+                // float: none;
+            }
+        }
+    }
+
+}
+
+
+@media #{$large} {
+    .image-gallery {
+
+        .main-image-wrapper {
+            max-width: 415px;
+         }
+
+        .thumb-cell {
+            max-width: 127px;
+        }
+
+    }
+}

@@ -1,0 +1,78 @@
+$right-col-min-width: 188px;
+
+.list-item-container
+{
+	.buttons
+	{
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		.btn
+		{
+			padding: 9px 25%;
+		}	
+	}
+}
+
+.item-details
+{		
+	.description
+	{
+		width: 35%;
+		word-wrap: break-word;
+	}
+
+	.left-col-width
+	{
+		width: 75%;
+	}
+
+	.right-col-border
+	{
+		border-left: 1px solid $grey-e6;
+		min-width: $right-col-min-width;
+	}
+
+	.price-value
+	{
+		font-size: 26px;
+	}
+}
+
+
+
+//other media sizes
+@media #{$screen}
+{
+   
+}
+
+//below 1024px display
+@media #{$medium}
+{
+	.item-details
+	{
+		.price-text
+		{
+			font-size: 14px;	
+		}
+		
+		.price-value
+		{
+			font-size: 26px;
+		}
+	}
+   
+}
+
+//above 1024px display
+@media #{$large}
+{ 
+	.item-details
+	{
+		.price-value
+		{
+			font-size: 32px;
+		}
+	}
+}

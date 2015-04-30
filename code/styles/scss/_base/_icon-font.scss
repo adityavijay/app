@@ -1,0 +1,416 @@
+@font-face {
+	font-family: 'chilli-icon-font';
+	src:url('/fonts/iconfont/chilli-icon-font.eot?odghes');
+	src:url('/fonts/iconfont/chilli-icon-font.eot?#iefixodghes') format('embedded-opentype'),
+		url('/fonts/iconfont/chilli-icon-font.woff?odghes') format('woff'),
+		url('/fonts/iconfont/chilli-icon-font.ttf?odghes') format('truetype'),
+		url('/fonts/iconfont/chilli-icon-font.svg?odghes#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: 'chilli-icon-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+
+	&.abroad:before {
+		content: "\e600";
+	}
+	&.abroad-fill:before {
+		content: "\e601";
+	}
+	&.accommodation:before {
+		content: "\e602";
+	}
+	&.active:before {
+		content: "\e603";
+	}
+	&.active-fill:before {
+		content: "\e604";
+	}
+	&.activity:before {
+		content: "\e605";
+	}
+	&.add:before {
+		content: "\e606";
+	}
+	&.alert:before {
+		content: "\e607";
+	}
+	&.arrow-style-a:before {
+		content: "\e608";
+	}
+	&.arrow-style-b-left:before {
+		content: "\e609";
+	}
+	&.arrow-style-b-right:before {
+		content: "\e60a";
+	}
+	&.arrow-style-c-down:before {
+		content: "\e60b";
+	}
+	&.arrow-style-c-up:before {
+		content: "\e60c";
+	}
+	&.arrow-style-d:before {
+		content: "\e60d";
+	}
+	&.arrow-style-e-left:before {
+		content: "\e60e";
+	}
+	&.arrow-style-e-right:before {
+		content: "\e60f";
+	}
+	&.arrow-style-f-down:before {
+		content: "\e610";
+	}
+	&.arrow-style-f-left:before {
+		content: "\e611";
+	}
+	&.arrow-style-f-right:before {
+		content: "\e612";
+	}
+	&.arrow-style-f-up:before {
+		content: "\e613";
+	}
+	&.availability:before {
+		content: "\e614";
+	}
+	&.beach:before {
+		content: "\e615";
+	}
+	&.beach-fill:before {
+		content: "\e616";
+	}
+	&.bell:before {
+		content: "\e617";
+	}
+	&.budget:before {
+		content: "\e618";
+	}
+	&.budget-fill:before {
+		content: "\e619";
+	}
+	&.calendar:before {
+		content: "\e61a";
+	}
+	&.changing-facilities:before {
+		content: "\e61b";
+	}
+	&.chat:before {
+		content: "\e61c";
+	}
+	&.close-style-a:before {
+		content: "\e61d";
+	}
+	&.close-style-b:before {
+		content: "\e61e";
+	}
+	&.close-style-c:before {
+		content: "\e61f";
+	}
+	&.cog:before {
+		content: "\e620";
+	}
+	&.comment:before {
+		content: "\e621";
+	}
+	&.contact:before {
+		content: "\e622";
+	}
+	&.dashboard:before {
+		content: "\e623";
+	}
+	&.disabled:before {
+		content: "\e624";
+	}
+	&.download:before {
+		content: "\e625";
+	}
+	&.duplicate:before {
+		content: "\e626";
+	}
+	&.duration:before {
+		content: "\e627";
+	}
+	&.edit:before {
+		content: "\e628";
+	}
+	&.email:before {
+		content: "\e629";
+	}
+	&.email-plus:before {
+		content: "\e62a";
+	}
+	&.email-sent:before {
+		content: "\e62b";
+	}
+	&.food:before {
+		content: "\e62c";
+	}
+	&.foodanddrink:before {
+		content: "\e62d";
+	}
+	&.foodanddrink-fill:before {
+		content: "\e62e";
+	}
+	&.general:before {
+		content: "\e62f";
+	}
+	&.girls:before {
+		content: "\e630";
+	}
+	&.girls-fill:before {
+		content: "\e631";
+	}
+	&.grid-all:before {
+		content: "\e632";
+	}
+	&.grid-all-fill:before {
+		content: "\e633";
+	}
+	&.group:before {
+		content: "\e634";
+	}
+	&.group-reserved:before {
+		content: "\e635";
+	}
+	&.guide:before {
+		content: "\e636";
+	}
+	&.home:before {
+		content: "\e637";
+	}
+	&.information:before {
+		content: "\e638";
+	}
+	&.internet:before {
+		content: "\e639";
+	}
+	&.leisure:before {
+		content: "\e63a";
+	}
+	&.lightbulb:before {
+		content: "\e63b";
+	}
+	&.list-view:before {
+		content: "\e63c";
+	}
+	&.lock:before {
+		content: "\e63d";
+	}
+	&.mapview:before {
+		content: "\e63e";
+	}
+	&.media:before {
+		content: "\e63f";
+	}
+	&.military:before {
+		content: "\e640";
+	}
+	&.military-fill:before {
+		content: "\e641";
+	}
+	&.minus:before {
+		content: "\e642";
+	}
+	&.more:before {
+		content: "\e643";
+	}
+	&.motorsport:before {
+		content: "\e644";
+	}
+	&.motorsport-fill:before {
+		content: "\e645";
+	}
+	&.nearme:before {
+		content: "\e646";
+	}
+	&.nearme-fill:before {
+		content: "\e647";
+	}
+	&.nightlife:before {
+		content: "\e648";
+	}
+	&.nightlife-fill:before {
+		content: "\e649";
+	}
+	&.original:before {
+		content: "\e64a";
+	}
+	&.original-fill:before {
+		content: "\e64b";
+	}
+	&.ourpicks:before {
+		content: "\e64c";
+	}
+	&.ourpicks-fill:before {
+		content: "\e64d";
+	}
+	&.paper-plane:before {
+		content: "\e64e";
+	}
+	&.parking:before {
+		content: "\e64f";
+	}
+	&.payments:before {
+		content: "\e650";
+	}
+	&.phone:before {
+		content: "\e651";
+	}
+	&.pin-google-small:before {
+		content: "\e652";
+	}
+	&.pin-google-tiny:before {
+		content: "\e653";
+	}
+	&.pin-large:before {
+		content: "\e654";
+	}
+	&.pin-small:before {
+		content: "\e655";
+	}
+	&.play:before {
+		content: "\e656";
+	}
+	&.plus:before {
+		content: "\e657";
+	}
+	&.pointer:before {
+		content: "\e658";
+	}
+	&.price-circle:before {
+		content: "\e659";
+	}
+	&.print:before {
+		content: "\e65a";
+	}
+	&.product-reviews:before {
+		content: "\e65b";
+	}
+	&.search:before {
+		content: "\e65c";
+	}
+	&.search-bookings:before {
+		content: "\e65d";
+	}
+	&.search-customers:before {
+		content: "\e65e";
+	}
+	&.search-suppliers:before {
+		content: "\e65f";
+	}
+	&.search-venues:before {
+		content: "\e660";
+	}
+	&.services:before {
+		content: "\e661";
+	}
+	&.sign-in:before {
+		content: "\e662";
+	}
+	&.single-room:before {
+		content: "\e663";
+	}
+	&.smiley:before {
+		content: "\e664";
+	}
+	&.social-facebook:before {
+		content: "\e665";
+	}
+	&.social-twitter:before {
+		content: "\e666";
+	}
+	&.star:before {
+		content: "\e667";
+	}
+	&.star-outline:before {
+		content: "\e668";
+	}
+	&.suitcase:before {
+		content: "\e669";
+	}
+	&.suitcase-outline:before {
+		content: "\e66a";
+	}
+	&.swap:before {
+		content: "\e66b";
+	}
+	&.switch-off:before {
+		content: "\e66c";
+	}
+	&.switch-off-fill:before {
+		content: "\e66d";
+	}
+	&.switch-on-fill:before {
+		content: "\e66e";
+	}
+	&.threedots:before {
+		content: "\e66f";
+	}
+	&.thumb-down:before {
+		content: "\e670";
+	}
+	&.thumbs-up-style-b:before {
+		content: "\e671";
+	}
+	&.thumb-up:before {
+		content: "\e672";
+	}
+	&.tick:before {
+		content: "\e673";
+	}
+	&.tick-fill:before {
+		content: "\e674";
+	}
+	&.tick-outline:before {
+		content: "\e675";
+	}
+	&.time:before {
+		content: "\e676";
+	}
+	&.timeline-view:before {
+		content: "\e677";
+	}
+	&.transfers:before {
+		content: "\e678";
+	}
+	&.triple-rooms:before {
+		content: "\e679";
+	}
+	&.twin-rooms:before {
+		content: "\e67a";
+	}
+	&.uk:before {
+		content: "\e67b";
+	}
+	&.uk-fill:before {
+		content: "\e67c";
+	}
+	&.undo:before {
+		content: "\e67d";
+	}
+	&.unusual:before {
+		content: "\e67e";
+	}
+	&.unusual-fill:before {
+		content: "\e67f";
+	}
+	&.upgrade:before {
+		content: "\e680";
+	}
+	&.view:before {
+		content: "\e681";
+	}
+}

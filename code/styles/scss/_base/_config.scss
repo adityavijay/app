@@ -1,0 +1,183 @@
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+
+// Foundation variables
+$include-html-classes: false;
+
+$include-html-global-classes: true;
+$include-html-inline-list-classes: true;
+$include-html-type-classes: true;
+$include-html-grid-classes: true;
+$include-html-button-classes: true;
+$include-html-form-classes: true;
+$include-html-custom-form-classes: true;
+
+$include-html-reveal-classes: true;
+
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+$primary-color: $brand;
+$alert-color: $alert;
+$success-color: $success;
+
+$body-bg: $grey-ed;
+
+
+
+// Type
+
+$body-font-family: "proxima-nova-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-color: $black-22;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+// A general <small> styling
+$small-font-size: $milli-size !default;
+$small-font-color: $grey-80 !default;
+
+
+
+// Grid config
+
+$row-width: 1306px;
+$column-gutter: em-calc(30);
+$total-columns: 12;
+
+
+// Media Queries
+$small-screen: 480px;
+$medium-screen: 768px;
+$large-screen: 1024px;
+$xlarge-screen: $row-width;
+
+$screen: "only screen";
+$small: "only screen and (min-width:"$small-screen")";
+$medium: "only screen and (min-width:"$medium-screen")";
+$large: "only screen and (min-width:"$large-screen")";
+$xlarge: "only screen and (min-width:"$xlarge-screen")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+
+
+/* banner media query variables*/
+$small-banner-height: 280px;
+$medium-banner-height: 380px;
+$large-banner-height: 550px;
+
+
+
+// We use these to control header font styles
+$header-font-family: $body-font-family;
+$header-font-weight: $font-weight-normal;
+$header-font-style: normal;
+$header-line-height: 1;
+$header-top-margin: 0;
+$header-bottom-margin: .5rem;
+$header-text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes
+$h1-font-size: em-calc($h1-size);
+$h2-font-size: em-calc($h2-size);
+$h3-font-size: em-calc($h3-size);
+$h4-font-size: em-calc($h4-size);
+$h5-font-size: em-calc($h5-size);
+$h6-font-size: em-calc($h6-size);
+$h7-font-size: em-calc($h7-size);
+$h8-font-size: em-calc($h8-size);
+
+
+
+// We use this to control the display property.
+$button-display: inline-block;
+$button-margin-bottom: em-calc(0);
+
+
+
+// Reveal modals
+
+/* We use these to control the style of the reveal overlay. */
+
+
+$reveal-overlay-bg: rgba(#000, .65);
+$reveal-overlay-bg-old: #000;
+
+/* We use these to control the style of the modal itself. */
+$reveal-modal-bg: #fff;
+$reveal-position-top: 50px;
+$reveal-default-width: 80%;
+$reveal-modal-padding: 0;
+$reveal-box-shadow: 0 0 10px rgba(#000,.4);
+
+/* We use these to style the reveal close button */
+$reveal-close-font-size: em-calc($h5-size);
+$reveal-close-top: em-calc(20);
+$reveal-close-side: em-calc(20);
+$reveal-close-color: $grey-80;
+$reveal-close-weight: bold;
+
+/* We use these to control the modal border */
+$reveal-border-style: solid;
+$reveal-border-width: 1px;
+$reveal-border-color: #666;
+
+$reveal-modal-class: "reveal-modal";
+$close-reveal-modal-class: "close-reveal-modal";
+
+
+// Forms
+
+$form-label-font-size: em-calc(16) !default;
+$form-label-font-weight: bold !default;
+//$form-label-font-color: $grey-99 !default;
+$form-label-font-color: $black !default;
+
+$input-font-color: $grey-99;
+$input-font-size: em-calc(16);
+
+$input-border-color: $grey-e6 !default;
+$input-focus-border-color: $cyan !default;
+$input-border-style: solid !default;
+$input-border-color: $grey-e6;
+$input-border-width: 2px !default;
+$input-box-shadow: none;
+
+$input-focus-border-color: $cyan;
+$input-error-message-font-color: $alert;
+
+$input-error-message-font-size: 1em !default;
+$input-error-message-font-weight: normal !default;
+$input-error-message-font-color: $alert !default;
+
+
+// Typeography
+
+// We use these to style the <hr> element
+$hr-border-width: 2px !default;
+$hr-border-color: $grey-e6 !default;

@@ -1,0 +1,202 @@
+.item-details
+{
+	.left-col, .right-col
+    {
+        display: table-cell;
+    }
+
+	.details
+	{
+		line-height: 25px;
+	}
+
+	.star-rating
+	{
+		margin-right: 12px;
+		float: left;
+	}
+}
+
+.itinerary-item
+{
+	.list-item-container
+	{
+		min-width: 630px;
+		width: 50%;
+	}
+
+    // .item-img
+    // {
+    //     position: relative;
+    //     width: 34.49%;
+    //     background: url("http://placehold.it/232x150") no-repeat;
+    //     background-size: cover;
+    //     background-position: 50%;
+    // }
+    // .item-img
+    // {
+    //     width: 40%;
+    // }
+    .img-container
+    {
+    	width: 232px;
+    }
+
+    .item-right
+    {
+        padding: 15px 20px;
+    }
+
+    .small-height-container
+    {
+        .item-right
+        {
+            padding: 15px 0px;
+        }
+    }
+}
+
+
+.small-height-container
+{
+    min-height: 90px;
+
+    .item-left
+    {
+        width: 70px;
+        padding: 15px 60px 10px 15px;
+    }
+
+    .name
+    {
+        font-size: 21px;
+    }
+
+    .right-col
+    {
+        padding-right: 15px;
+    }
+
+    .item-left.minibus-icon
+    {
+    	padding-right: 25px;
+    }
+}
+
+// .container-on-remove-item
+// {
+// 	text-align: center;
+// 	padding: 15px 0px;
+
+// 	.name
+// 	{
+// 		font-size: 18px;
+// 		display: inline-block;
+// 		position: relative;
+// 		.anchor
+// 		{
+// 			position: absolute;
+// 			left:-35px;
+// 			top: -2px;
+// 		}
+// 	}
+
+// 	.additional-text
+// 	{
+// 		font-size: 14px;
+// 	}
+// }
+
+
+
+
+
+
+
+//icon-states to deal with SVG problem during hovering
+.icon-states
+{
+    .normal
+    {
+        display: inline-block;
+    }
+
+    .toggle
+    {
+        display: none;
+    }
+
+    .hover
+    {
+        display: none;
+    }
+
+    &.normal-active
+    {
+        .normal
+        {
+            display: inline-block;
+        }
+
+        .toggle
+        {
+            display: none;
+        }
+
+        .hover
+        {
+            display: none;
+        }
+    }
+
+    &.toggle-active
+    {
+       .normal
+        {
+            display: none;
+        }
+
+        .toggle
+        {
+            display: inline-block ;
+        }
+
+        .hover
+        {
+            display: none;
+        }
+    }
+
+    &.hover-active
+    {
+        .normal
+        {
+            display: none;
+        }
+
+        .toggle
+        {
+            display: none;
+        }
+
+        .hover
+        {
+            display: inline-block;
+        }
+    }
+}
+
+
+@media #{$large}
+{
+    .itinerary-item
+    {
+        .item-details
+        {
+            .name
+            {
+                font-size: 21px;
+            }
+        }
+    }
+}

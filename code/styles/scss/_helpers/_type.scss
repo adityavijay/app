@@ -1,0 +1,39 @@
+// Text Helpers
+
+
+ // Transform
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-lower {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+
+// Font Style
+
+.text-light {
+	font-family: proxima-nova-light;
+	font-weight: lighter;
+}
+
+.text-semibold {
+	font-family: proxima-nova-semibold;
+	font-weight: normal;
+}
+
+.text-bold {
+	font-family: proxima-nova-bold;
+	font-weight: bold;
+}
+
+
+
+
+

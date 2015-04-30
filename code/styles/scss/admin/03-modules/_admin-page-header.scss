@@ -1,0 +1,103 @@
+// Admin Page Header
+
+.admin-page-header {
+    position: relative;
+    background-color: $white;
+    width: 100%;
+}
+
+
+.admin-page-header__header-top {
+    // height: 90px;
+    position: relative;
+    line-height: 55px;
+    @include clearfix
+}
+
+
+.admin-page-header__header-nav {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    line-height: 40px;
+
+    &> .nav-item {
+        margin: 0 20px 0 0;
+        font-family: proxima-nova-semibold;
+        font-size: $h7-size;
+
+        &.active a:link{
+            color: $black-22;
+            border-color: $brand;
+        }
+
+        >a {
+            &:link, &:visited {
+                color: $grey-99;
+                border-bottom: 3px solid $white;
+            }
+
+            &:hover, &.active, {
+                color: $black-22;
+                border-color: $brand;
+            }
+        }
+
+        &.alerts {
+            padding-left: 20px;
+            border-left: 1px solid $grey-99;
+        }
+    }
+}
+
+.event-summary {
+    line-height: 60px;
+}
+
+.event-pricings {
+    line-height: 100px;
+    background-color: #f9f9f9;
+
+    .left-block {
+        float: left;
+    }
+
+    .middle-block {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .right-block {
+        float: right;
+    }
+}
+
+.event-pricing-items {
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+
+}
+
+.event-price-item {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid $grey-99;
+    text-align: center;
+    font-family: 'proxima-nova-semibold';
+
+    &:last-child {
+        border-right: 0;
+    }
+}
+
+.price-name {
+    color: $grey-99;
+    font-size: $h8-size;
+}
+
+.price-value {
+
+}

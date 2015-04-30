@@ -1,0 +1,32 @@
+// Accordians
+
+// Thanks to
+// http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery
+
+.accordion {
+    overflow: hidden;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width: 100%;
+    // padding: 15px 0;
+    display: inline-block;
+    transition: all linear 0.15s;
+    color: $grey-99;
+    font-weight: bold;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    text-decoration: none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding: 15px 0;
+    display: none;
+}

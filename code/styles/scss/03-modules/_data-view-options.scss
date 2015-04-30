@@ -1,0 +1,17 @@
+// Data view options (Sort options and data view options grid, list and map)
+
+.data-view__options {
+    position: relative;
+    padding: 40px 0 0;
+    @include clearfix;
+
+
+    .view-option {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .view-type {
+        float: right;
+    }
+}

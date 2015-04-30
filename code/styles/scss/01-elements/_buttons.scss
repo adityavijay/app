@@ -1,0 +1,149 @@
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+
+// Small = 30px height
+// Medium (normal) = 36px height
+// Large = 45px height
+
+button, .btn{
+    @include button-base;
+    // @include single-transition;
+    // @include button-style;
+    font-family: 'proxima-nova-bold';
+    font-size: .875em; // 14px / 16px (1em)
+    padding: 9px 30px;
+    border-radius: 3px;
+    border: 1px solid $brand;
+    background-color: $brand;
+    color: $white;
+    text-transform: uppercase;
+
+    &:link, &:visited {
+        color: $white;
+    }
+
+    &:hover {
+        background-color: $brand-alt;
+        border: 1px solid $brand-alt;
+        color: $white;
+    }
+
+    &.small {
+        padding: 6px 30px;
+    }
+
+    &.large {
+        font-size: 1em;
+        padding: 13px 30px;
+    }
+
+
+    &.reverse {
+        background-color: $white;
+        color: $brand;
+
+        &:hover {
+            background-color: $brand;
+            border: 1px solid $brand;
+            color: $white;
+        }
+    }
+
+    &.contrast {
+        color: $black-22;
+        background-color: $white;
+        border: 1px solid $black-22;
+
+        &:hover {
+            color: $white;
+            background-color: $black-22;
+            border: 1px solid $black-22;
+        }
+    }
+
+
+    &.contrast-reverse {
+        background-color: $black-22;
+        color: $white;
+        border: 1px solid $white;
+
+        &:hover {
+            background-color: $white;
+            color: $black-22;
+        }
+    }
+
+
+    &.white-only {
+        color: $black-22;
+        background-color: $white;
+        border: none;
+
+        &:hover {
+            color: $black-22;
+            background-color: $white;
+            border: none;
+        }
+    }
+
+
+    &.black-only {
+        color: $white;
+        background-color: $black-22;
+        border: none;
+
+        &:hover {
+            color: $white;
+            background-color: $black-22;
+            border: none;
+        }
+    }
+
+    &.transparent {
+        background: none;
+        color: $white;
+        border: 2px solid $white;
+
+        &:hover
+        {
+            background-color: $white;
+            color: $black-22;
+            border: 2px solid $white;
+        }
+    }
+
+     &.transparent--black {
+        background: none;
+        color: $black-30;
+        border: 1px solid $black-30;
+
+        &:hover
+        {
+            background-color: $black-30;
+            color: $white;
+            border: 1px solid $white;
+            //border: 2px solid $white;
+        }
+    }
+
+    &.view-edit
+    {
+        display: block;
+        height: 37px;
+    }
+
+    &.reserved
+    {
+
+    }
+
+    &.disable
+    {
+        @extend .disabled;
+        display: block;
+        border: 2px solid $grey-e5 !important;
+        background: white !important;
+        color: $grey-e5 !important;
+    }
+}

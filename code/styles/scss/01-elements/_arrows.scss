@@ -1,0 +1,229 @@
+// Arrows
+
+
+// White normal sized arrows (15px)
+// ===============================
+
+.arrow-top-left {
+    @include arrow(top, left, $white, $white);
+}
+
+.arrow-top-center {
+    @include arrow(top, center, $white, $white);
+}
+
+.arrow-top-right {
+    @include arrow(top, right, $white, $white);
+}
+
+
+.arrow-right-top {
+    @include arrow(right, top, $white, $white);
+}
+
+.arrow-right-center {
+    @include arrow(right, center, $white, $white);
+}
+
+.arrow-right-bottom {
+    @include arrow(right, bottom, $white, $white);
+}
+
+
+.arrow-bottom-left {
+    @include arrow(bottom, left, $white, $white);
+}
+
+.arrow-bottom-center {
+    @include arrow(bottom, center, $white, $white);
+}
+
+.arrow-bottom-right {
+    @include arrow(bottom, right, $white, $white);
+}
+
+
+.arrow-left-top {
+    @include arrow(left, top, $white, $white);
+}
+
+.arrow-left-center {
+    @include arrow(left, center, $white, $white);
+}
+
+.arrow-left-bottom {
+    @include arrow(left, bottom, $white, $white);
+}
+
+
+
+// White large sized arrows (20px)
+// ===============================
+
+// .arrow-top-left-large {
+//     @include arrow(top, left, $white, $white, 20px);
+// }
+
+.arrow-top-center-large {
+    @include arrow(top, center, $white, $white, 20px);
+}
+
+// .arrow-top-right-large {
+//     @include arrow(top, right, $white, $white, 20px);
+// }
+
+
+// .arrow-right-top-large {
+//     @include arrow(right, top, $white, $white, 20px);
+// }
+
+// .arrow-right-center-large {
+//     @include arrow(right, center, $white, $white, 20px);
+// }
+
+// .arrow-right-bottom-large {
+//     @include arrow(right, bottom, $white, $white, 20px);
+// }
+
+
+// .arrow-bottom-left-large {
+//     @include arrow(bottom, left, $white, $white, 20px);
+// }
+
+.arrow-bottom-center-large {
+    @include arrow(bottom, center, $white, $white, 20px);
+}
+
+// .arrow-bottom-right-large {
+//     @include arrow(bottom, right, $white, $white, 20px);
+// }
+
+
+// .arrow-left-top-large {
+//     @include arrow(left, top, $white, $white, 20px);
+// }
+
+.arrow-left-center-large {
+    @include arrow(left, center, $white, $white, 20px);
+}
+
+// .arrow-left-bottom-large {
+//     @include arrow(left, bottom, $white, $white, 20px);
+// }
+
+
+
+// Black normal sized arrows (15px)
+// ===============================
+
+.arrow-top-left-black {
+    @include arrow(top, left, $black-22, $black-22);
+}
+
+.arrow-top-center-black {
+    @include arrow(top, center, $black-22, $black-22);
+}
+
+.arrow-top-right-black {
+    @include arrow(top, right, $black-22, $black-22);
+}
+
+
+.arrow-right-top-black {
+    @include arrow(right, top, $black-22, $black-22);
+}
+
+.arrow-right-center-black {
+    @include arrow(right, center, $black-22, $black-22);
+}
+
+.arrow-right-bottom-black {
+    @include arrow(right, bottom, $black-22, $black-22);
+}
+
+
+.arrow-bottom-left-black {
+    @include arrow(bottom, left, $black-22, $black-22);
+}
+
+.arrow-bottom-center-black {
+    @include arrow(bottom, center, $black-22, $black-22);
+}
+
+.arrow-bottom-right-black {
+    @include arrow(bottom, right, $black-22, $black-22);
+}
+
+
+.arrow-left-top-black {
+    @include arrow(left, top, $black-22, $black-22);
+}
+
+.arrow-left-center-black {
+    @include arrow(left, center, $black-22, $black-22);
+}
+
+.arrow-left-bottom-black {
+    @include arrow(left, bottom, $black-22, $black-22);
+}
+
+
+
+// Black large sized arrows (20px)
+// ===============================
+
+// .arrow-top-left-large-black {
+//     @include arrow(top, left, $black-22, $black-22, 20px);
+// }
+
+// .arrow-top-center-large-black {
+//     @include arrow(top, center, $black-22, $black-22, 20px);
+// }
+
+// .arrow-top-right-large-black {
+//     @include arrow(top, right, $black-22, $black-22, 20px);
+// }
+
+
+// .arrow-right-top-large-black {
+//     @include arrow(right, top, $black-22, $black-22, 20px);
+// }
+
+// .arrow-right-center-large-black {
+//     @include arrow(right, center, $black-22, $black-22, 20px);
+// }
+
+// .arrow-right-bottom-large-black {
+//     @include arrow(right, bottom, $black-22, $black-22, 20px);
+// }
+
+
+// .arrow-bottom-left-large-black {
+//     @include arrow(bottom, left, $black-22, $black-22, 20px);
+// }
+
+// .arrow-bottom-center-large-black {
+//     @include arrow(bottom, center, $black-22, $black-22, 20px);
+// }
+
+// .arrow-bottom-right-large-black {
+//     @include arrow(bottom, right, $black-22, $black-22, 20px);
+// }
+
+
+// .arrow-left-top-large-black {
+//     @include arrow(left, top, $black-22, $black-22, 20px);
+// }
+
+// .arrow-left-center-large-black {
+//     @include arrow(left, center, $black-22, $black-22, 20px);
+// }
+
+// .arrow-left-bottom-large-black {
+//     @include arrow(left, bottom, $black-22, $black-22, 20px);
+// }
+
+.page-header
+{
+    display: none!important;
+}

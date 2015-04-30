@@ -1,0 +1,20 @@
+// Unordered Lists
+
+.brand-circle-ticks {
+    padding-left: 15px;
+    list-style-type: none;
+    line-height: 1;
+
+    >li {
+        padding-bottom: 15px;
+
+        &:before {
+            font-family: 'chilli-icon-font';
+            font-size: 1.5em;
+            color: $brand;
+            content: "\e675"; // The same as it is in the icon-font.scss file in the _base directory
+            margin: 0 15px 0 -15px;
+            vertical-align: middle;
+        }
+    }
+}

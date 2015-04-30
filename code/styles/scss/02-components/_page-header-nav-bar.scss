@@ -1,0 +1,79 @@
+// Page Header Navigation Bar
+
+.page-header__nav-bar {
+    position: relative;
+    z-index: 98;
+    transition: top .3s;
+
+    .search-bar-toggle {
+        position: relative;
+        z-index: 2;
+    }
+
+    .header-sign-in {
+        position: relative;
+        z-index: 2;
+    }
+
+    opacity: 1;
+    transition: all .3s;
+}
+
+
+.page-header__header-nav {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+
+    &> .nav-item {
+        margin: 0 20px 0 0;
+        font-family: proxima-nova-bold;
+        font-size: $h7-size;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.is-active a:link, {
+            color: $black-22;
+            border-color: $brand;
+        }
+
+        .icon {
+            width: 12px;
+            height: 12px;
+        }
+
+        >a {
+            line-height: 37px;
+
+            &:link, &:visited {
+                color: $grey-99;
+                border-bottom: 3px solid $white;
+            }
+
+            &:hover {
+                color: $black-22;
+                border-color: $brand;
+            }
+        }
+    }
+}
+
+@media #{$screen} {
+
+    .page-header__nav-bar {
+        display: none;
+    }
+
+}
+
+
+@media #{$medium} {
+
+    .page-header__nav-bar {
+        height: 40px;
+        line-height: 40px;
+        display: block;
+    }
+}

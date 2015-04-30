@@ -1,0 +1,83 @@
+// My Events Header
+
+.my-events-header {
+	@include clearfix;
+
+	.header-top {
+		padding: 35px 0;
+	}
+
+	.header-bottom {
+
+
+	}
+}
+
+
+.my-events-nav {
+	margin: 0;
+    word-spacing: 0;
+    font-size: $h7-size;
+
+	.nav-item {
+        border-left: 1px solid $grey-66;
+
+        .nav-item__text {
+            display: none;
+        }
+
+        &:last-child{
+        	border-right: 1px solid $grey-66;
+        }
+
+        &.is-active a:link, {
+            // background-color: $white;
+            color: $white;
+        }
+
+        >a {
+        	padding: 15px 20px;
+
+        	&:link, &:visited {
+                color: $grey-cc;
+	        }
+
+	        &:hover {
+                // background-color: $white;
+	            color: $white;
+	        }
+        }
+
+        .icon {
+            font-size: $h4-size;
+        }
+
+
+    }
+}
+
+@media #{$medium} {
+    .my-events-header {
+
+        .header-top {
+
+        }
+    }
+
+    .my-events-nav {
+
+        .nav-item {
+
+            .nav-item__text {
+                display: inline-block;
+            }
+
+            .icon {
+                margin-right: 10px;
+            }
+
+        }
+
+
+    }
+}

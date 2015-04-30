@@ -1,0 +1,44 @@
+.group-view {
+    // padding-top: 30px;
+    margin: 0;
+    @include clearfix;
+
+    .view-header {
+        padding: 30px 0;
+        @include clearfix;
+    }
+
+    .group-view__header {
+        font-size: $h7-size;
+        font-weight: bold;
+    }
+
+    .group-page-buttons-double
+    {
+        width: 450px;
+        margin: 30px auto 50px auto;
+
+        &> li:first-child
+        {
+            padding-right: 7px;
+        }
+
+        &> li:last-child
+        {
+            padding-left: 7px;
+        }
+        
+        .icon
+        {
+            font-size: 16px;
+        }
+    }
+}
+
+.group-view__list {
+
+    .list-header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

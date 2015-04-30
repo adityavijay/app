@@ -1,0 +1,233 @@
+// Data view list items e.g. locations and activities
+
+.data-view__list-item {
+    @include clearfix();
+    position: relative;
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    background-color: $white;
+    margin-bottom: 25px;
+    line-height: 1;
+
+    .item-wrapper {
+        display: table;
+        width: 100%;
+    }
+
+    .item-image-container {
+        position: relative;
+        // float: left;
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .item-image {
+
+    }
+
+    .item-price {
+        position: absolute;
+        background-color: $black-22;
+        background-color: rgba($black-22, .75);
+        color: $white;
+        right: 0;
+        top: 20px;
+        padding: 9px 9px 11px;
+    }
+
+    .item-details-wrapper {
+        position: relative;
+        display: table-cell;
+        vertical-align: top;
+        padding: 20px;
+
+    }
+
+    .item-name {
+        font-family: proxima-nova-bold;
+        font-size: $h4-size;
+        line-height: 1;
+        padding-bottom: 14px;
+    }
+
+    .item-description {
+        margin: 10px 0 20px;
+        font-size: $h7-size;
+        color: $grey-80;
+    }
+
+    .item-details-footer {
+        position: absolute;
+        bottom: 20px;
+        line-height: 1;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+
+}
+
+.list-item-container
+{
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid $grey-e6;
+}
+
+.item-left, .item-right
+
+{
+    display: table-cell;
+}
+
+.item-left
+{
+   // background: $grey-ed;
+   // padding-right: 5px;
+}
+
+.item-right
+{
+    width: 100%;
+}
+
+// .item-img
+// {
+//     position: relative;
+//     width: 23.49%;
+//     background: url("http://placehold.it/288x187") no-repeat;
+//     background-size: cover;
+//     background-position: 50%;
+// }
+
+// .item-img
+// {
+//     width: 23.49%;
+// }
+
+// .img-container
+// {
+//     position: relative;
+//     width: 288px;
+// }
+
+.img-price-tag
+{
+    background-color: $black-2e;
+    color: $white;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    padding: 1px 11px;
+}
+
+.remove-item
+{
+    position: absolute;
+    top:  10px;
+    right: 15px;
+}
+
+// .item-details
+// {
+//     .name
+//     {
+//         font-size: $h4-size;
+//     }
+
+//     .top-part, .right-col
+//     {
+//         line-height:1;
+//     }
+
+//     .bottom-part
+//     {
+//         position: absolute;
+//         bottom: 15px;
+//         font-size: $h7-size;
+//     }
+// }
+
+.item-position-controls {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    top: 35px;
+    left: -50px;
+
+    .position-control {
+        font-size: 2em;
+        line-height: 1;
+        margin: 5px 0;
+    }
+}
+
+
+//media queries
+
+@media #{$screen} {
+
+    .data-view__list-item {
+
+        .ribbon-wrapper {
+            // display: none;
+        }
+
+        .item-image-container {
+            width: 130px;
+        }
+
+        .item-description {
+            display: none;
+        }
+    }
+}
+
+@media #{$medium} {
+
+    .data-view__list-item {
+
+        .ribbon-wrapper {
+            // display: block;
+        }
+
+        .item-image-container {
+            width: 264px;
+        }
+
+        .item-details-wrapper {
+            .name
+            {
+                font-size: $h3-size;
+            }
+
+            .item-description {
+                display: block;
+            }
+        }
+    }
+}
+
+@media #{$large} {
+
+    .data-view__list-item {
+
+        .item-image-container {
+            width: 308px;
+        }
+
+        .item-details-wrapper {
+            .name
+            {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+

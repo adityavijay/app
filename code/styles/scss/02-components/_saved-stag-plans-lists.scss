@@ -1,0 +1,14 @@
+// Saved Stag Plans Lists (UL items part of the data-view modules)
+
+
+@media #{$small} {
+    .saved-stag-plans__list {
+        max-width: 600px;
+    }
+}
+
+@media #{$large} {
+    .saved-stag-plans__list {
+        max-width: 880px;
+    }
+}

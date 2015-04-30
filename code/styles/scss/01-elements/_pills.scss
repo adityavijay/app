@@ -1,0 +1,21 @@
+// Pills
+
+.pill {
+    border-radius: 3px;
+    background-color: $white;
+    color: $black-22;
+    padding: 10px;
+
+    >a:link {
+        color: $black-22;
+    }
+}
+
+.pill--black {
+    background-color: $black-22;
+    color: $white;
+
+    >a:link {
+        color: $white;
+    }
+}

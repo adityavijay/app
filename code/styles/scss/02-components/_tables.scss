@@ -1,0 +1,34 @@
+// Tables
+
+table {
+	border: none;
+	margin-bottom: 0;
+	width: 100%;
+
+	thead{
+		background: none;
+	}
+}
+
+
+
+.table-grey {
+
+	& tr {
+		border-top: 1px solid $grey-e6;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+
+	td {
+
+		background-color: $grey-f2;
+		border-left: 1px solid $grey-e6;
+
+		&:first-child {
+			border-left: none;
+		}
+	}
+}

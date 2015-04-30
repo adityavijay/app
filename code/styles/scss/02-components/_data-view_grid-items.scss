@@ -1,0 +1,133 @@
+// Data view grid items e.g. locations and activities
+
+.data-view__grid-item {
+    margin-bottom: 20px;
+
+    list-style-type: none;
+
+    // width: 100%;
+    // padding: 12px;
+
+    .item-name {
+        line-height: 1;
+        font-weight: bold;
+        font-size: $h4-size;
+        padding-bottom: 14px;
+    }
+
+    .item-image-container {
+        position: relative;
+
+        .item-name {
+            position: absolute;
+            bottom: 15px;
+            left: 14px;
+            color: $white;
+            padding: 0;
+        }
+    }
+
+    .item-image {
+        width: 100%;
+    }
+
+    .item-price {
+        position: absolute;
+        background-color: $black-30;
+        background-color: rgba($black-30, .75);
+        color: $white;
+        left: 14px;
+        bottom: 0;
+        padding: 9px 9px 11px;
+    }
+
+    .item-details {
+        padding: 14px 14px 20px;
+        text-align: left;
+        background: $white;
+        font-size: 14px;
+
+        @include clearfix;
+    }
+
+    .added-overlay-wrapper {
+        display: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    &.added {
+
+        .added-overlay-wrapper {
+            display: block;
+
+            .added-overlay-bg {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background-color: $white;
+            }
+
+            .added-details-wrapper {
+                position: relative;
+                display: table;
+                height: 100%;
+                width: 100%;
+
+                .added-details {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+            }
+
+        }
+
+        .icon {
+            // font-size: $h4-size;
+        }
+
+        .item-details {
+            border-top: 1px solid $grey-e6;
+        }
+
+    }
+
+}
+
+// @media #{$screen} {
+//     width: 100%;
+// }
+
+@media #{$small} {
+    .data-view__grid-item {
+        // width: 50%;
+        @include gallery(6);
+        margin-bottom: gutter(12);
+
+    }
+}
+
+@media #{$medium} {
+    .data-view__grid-item {
+    	// width: 33.33%;
+        @include gallery(4);
+
+    }
+}
+
+@media #{$large} {
+    .data-view__grid-item {
+    	// width: 25%;
+        @include gallery(3);
+    }
+}

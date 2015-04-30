@@ -1,0 +1,71 @@
+.flight-details-wrapper
+{
+    border-top: 1px solid $grey-dd;
+    border-bottom: 1px solid $grey-dd;
+
+    .flight-details-toggle
+    {
+        padding: 15px;
+        text-align: center;
+
+        .title
+        {
+            font-size: 18px;
+            margin: 0px 5px;
+        }
+
+        .title, .toggle-button
+        {
+            display: inline-block;
+        }
+    }
+
+    .flight-details
+    {
+        border-top: 1px solid $grey-dd;
+
+        .details
+        {
+            padding: 45px 0px 55px 0px;
+            width: 50%;
+            margin: 0px auto;
+            min-width: 565px;
+        }
+    }
+
+    .right-col
+    {
+        border-left: 1px solid $grey-dd;
+    }
+
+    .buttons
+    {
+        position: relative;
+        right: 8px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .time
+    {
+        .hour,.minute
+        {
+            width: 50%;
+        }
+
+        .hour
+        {
+            float: left;
+        }
+    }
+
+    select,input
+    {
+        height: 35px;
+    }
+
+    label
+    {
+        color: $black-33;
+    }
+}

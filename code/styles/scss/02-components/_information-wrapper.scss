@@ -1,0 +1,15 @@
+.information-wrapper
+{
+    .information
+    {
+        display: none;
+    }
+
+    &.open
+    {
+        .information
+        {
+            display: block;
+        }
+    }
+}

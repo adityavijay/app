@@ -1,0 +1,43 @@
+
+.customer-selections-wrapper
+{
+    // display: inline-block;
+    background: $grey-ed;
+}
+
+.customer-selections
+{
+    margin-bottom: 0px;
+    color: $grey-99;
+    max-width: 173px;
+
+    .icon
+    {
+        margin-right: 10px;
+    }
+
+    .option-row
+    {
+        display: table;
+        height: 40px;
+        width: 172px;
+
+        .option-text
+        {
+            position: relative;
+            bottom: 8px;
+        }
+    }
+
+    .option-selection-icon
+    {
+        display: table-cell;
+        width: 40px;
+    }
+
+    .border-on-reserved
+	{
+		border-bottom: 1px solid $grey-D1;
+		margin-bottom: 10px;
+	}
+}

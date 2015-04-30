@@ -1,0 +1,134 @@
+.group-view-list-item {
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background: $white;
+    display: table;
+
+    .guest-avatar-block, .guest-details-block, .guest-status-block, .guest-payment-block {
+        display: table-cell;
+    }
+
+    .guest-avatar-block {
+        width: 135px;
+        padding: 15px 20px 10px 20px;
+        text-align: center;
+        
+        .guest-avatar {
+            border-radius: 50%;
+        }
+        .add-photo
+        {
+            position: relative;
+        }
+    }
+
+    .guest-details-block {
+        position: relative;
+        vertical-align: middle;
+       // padding: 30px 20px 30px 0px;
+
+        .edit-details {
+            position: absolute;
+            top: 35px;
+            right: 20px;
+        }
+
+        .guest-name{
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        .guest-permissions {
+            font-size: 14px;
+            .tick
+            {
+                vertical-align: sub;
+            }
+        }
+
+        .contact-details {
+            padding-top: 10px;
+            .phone, .email
+            {
+                vertical-align: middle;
+            }
+        }
+    }
+    
+    .guest-status-block {
+        width: 150px;
+        text-align: center;
+        border-left: 1px solid $grey-e6;
+        vertical-align: middle;
+        padding: 0 15px;
+        
+        .join-text
+        {
+            font-size: 18px;
+            line-height: 12px;
+            margin-bottom: 19px;
+        }
+
+        .logged-text
+        {
+            color: $grey-99;
+            font-size: 12px;
+        }
+    }
+
+    .guest-payment-block
+    {
+        width: 150px;
+        border-left: 1px solid $grey-e6;
+        vertical-align: middle;
+        text-align: center;
+
+        .paid-text
+        {
+            font-size: 21px;
+        }
+        
+        .outstanding-text, .payment-text
+        {
+            font-size: 14px;
+        }
+
+        .outstanding-text
+        {
+
+        }
+
+        .payment-text
+        {
+            color: $green-80;
+        }
+    }
+
+    .group-total-payment-summary
+    {
+        @include clearfix();
+        padding: 20px 20px;
+
+        .dues
+        {
+            float: left;
+        }
+
+        .paid-outstanding
+        {
+            float: right;
+        }
+
+        .dues-total,.paid,.outstanding
+        {
+            font-size: 21px;
+        }
+
+        .paid
+        {
+            margin-right: 60px;
+        }
+    }
+}

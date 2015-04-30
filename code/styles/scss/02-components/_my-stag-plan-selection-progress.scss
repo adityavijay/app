@@ -1,0 +1,25 @@
+// My Stag Plan Selection Progress
+
+.my-stag-plan-selection-progress {
+
+    .list-item {
+        width: 150px;
+
+        .bg-img {
+            width: 75px;
+            height: 75px;
+        }
+
+        .item-text{
+            line-height: 1;
+            margin-top: 10px;
+            font-size: $h7-size;
+        }
+
+        .reserve-button {
+            display: inline-block;
+            padding: 26px 30px;
+            margin-bottom: 14px;
+        }
+    }
+}

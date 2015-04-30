@@ -1,0 +1,69 @@
+// Data View Package grid items e.g. Destination Ready Made, and Saved Stag Plans
+
+.data-view__package-grid-item {
+    @include clearfix();
+    position: relative;
+    display: block;
+    list-style-type: none;
+    margin-bottom: 25px;
+    line-height: 1;
+
+    .package-wrapper {
+        background-color: $white;
+    }
+
+    .overlay-wrapper {
+        background-color: #444;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    .package-contents {
+        position: relative;
+        padding: 25px;
+
+        .image-gallery-wrapper {
+            position: relative;
+
+        }
+    }
+
+
+    .package-summary-list {
+        font-size: $h7-size;
+        color: $white;
+        list-style-type: disc;
+        list-style-position: inside;
+
+        &.summary-list-item {
+
+        }
+    }
+
+    .package-details {
+        display: relative;
+        padding-top: 20px;
+    }
+
+    .package-name {
+        font-size: $h3-size;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .price-tag {
+        display: inline;
+        float: right;
+        font-weight: bold;
+
+        .package-price {
+            font-size: $h3-size;
+        }
+    }
+}
+
+
+@media #{$large} {
+    .data-view__package-grid-item {
+        @include gallery(6);
+    }
+}

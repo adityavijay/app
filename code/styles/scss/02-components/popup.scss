@@ -1,0 +1,14 @@
+.popup-wrapper
+{
+	position: absolute;
+	display: inline-block;
+	z-index: 10;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.popup
+{
+	list-style-type: none;
+}

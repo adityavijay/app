@@ -1,0 +1,88 @@
+// Isotope items
+
+.isotope-grid {
+	margin: 0;
+	-webkit-margin-before: 0;
+	-webkit-padding-start: 0;
+	// width: 100%;
+}
+
+.isotope-item {
+	list-style: none;
+	position: relative;
+	display: table;
+	overflow: hidden;
+	// margin-bottom: 10px;
+	border: 10px solid white;
+}
+
+.isotope-item__inner {
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.isotope-item__img {
+	display: block;
+	margin: auto auto;
+	background-size: cover;
+	background-position: 50%;
+}
+
+@media #{$screen} {
+	.isotope-item__img {
+		height: 245px;
+	}
+
+	.isotope-item {
+		width: 100%;
+
+		&.wide {
+			width: 100%;
+		}
+	}
+}
+
+@media #{$small} {
+	.isotope-item__img {
+		height: 320px;
+	}
+
+	.isotope-item {
+		width: 50%;
+
+		&.wide {
+			width: 50%;
+		}
+	}
+}
+
+@media #{$medium} {
+	.isotope-item__img {
+		height: 300px;
+	}
+
+	.isotope-item {
+		width: 33.33%;
+
+		&.wide {
+			width: 33.33%;
+		}
+	}
+}
+
+@media #{$large} {
+	.isotope-item__img {
+		height: 320px;
+	}
+
+	.isotope-item {
+		width: 33.33%;
+
+		&.wide {
+			width: 66.66%;
+		}
+	}
+}

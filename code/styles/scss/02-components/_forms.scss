@@ -1,0 +1,67 @@
+// Forms and form items
+
+form {
+
+    .row {
+        margin-bottom: 20px;
+
+    }
+
+    // Form inputs
+
+    input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea
+    {
+        @include radius(3px);
+        border-color: $grey-e6;
+        box-shadow: none;
+        margin-bottom: 5px;
+    }
+
+
+    span.error {
+        background-color: transparent;
+
+        &:before {
+            content: "";
+        }
+    }
+
+    label.inline
+    {
+        padding: 0.35em 0;
+    }
+}
+
+// Sign up form
+
+.form-wrapper {
+    max-width: 320px;
+    margin: auto auto;
+    text-align: center;
+
+    .mail-sent
+    {
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+}
+
+.sign-up-form {
+
+    text-align: left;
+    padding-top: 40px;
+
+    input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], 
+    input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], 
+    input[type="number"], input[type="search"], input[type="tel"], input[type="time"],
+    input[type="url"], textarea, .dropdown-button
+    {
+        margin-bottom: 20px;
+    }
+
+    .submit
+    {
+        margin-top: 5px;
+        margin-bottom: 25px
+    }
+}

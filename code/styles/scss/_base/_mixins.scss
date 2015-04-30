@@ -1,0 +1,9 @@
+// Mixins
+
+%panel {
+    position: relative;
+    border: 1px solid $grey-99;
+    margin-bottom: 1.25rem;
+    padding: 20px;
+    background: $white;
+}

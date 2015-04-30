@@ -1,0 +1,89 @@
+// Absolute positioning helpers
+.pos--relative
+{
+	position: relative;
+}
+
+.pos--absolute
+{
+	position: absolute;
+}
+
+//top
+.t {
+    position: absolute;
+    top: 0;
+}
+.-t-4
+{
+	top: -4px;
+}
+.-t-5
+{
+	top: -5px;
+}
+.-t-6
+{
+	top: -6px;
+}
+
+//bottom
+.b {
+    position: absolute;
+    bottom: 0;
+}
+.b-6
+{
+	bottom: 6px;
+}
+
+//left
+.l {
+    position: absolute;
+    left: 0;
+}
+.-l-4
+{
+	left: -4px;
+}
+.-l-5
+{
+	left: -5px;
+}
+.-l-6
+{
+	left: -6px;
+}
+
+.-l-8
+{
+	left: -8px;
+}
+
+//right
+.r
+{
+   position: absolute;
+   right: 0;
+}
+.-r-3
+{
+	right: -3px;
+}
+.-r-4
+{
+	right: -4px;
+}
+
+.-r-5
+{
+	right: -5px;
+}
+
+
+//bottom
+.b-20
+{
+	position: absolute;
+	bottom: 20px;
+}

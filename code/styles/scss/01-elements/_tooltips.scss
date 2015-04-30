@@ -1,0 +1,97 @@
+// Tooltips. Add this class to an item to give it a tooltip look, and does not actually
+// function as a tooltip.
+
+.tooltip {
+    position: relative;
+    // padding: 10px;
+    margin-bottom: 10px;
+
+    @include radius(3px);
+    @include clearfix;
+}
+
+
+.tooltip--white {
+    background-color: $white;
+    color: $black-22;
+    @include arrow(bottom, center, $white, $grey-80, 10px);
+}
+
+
+.tooltip--black {
+    background-color: $black-22;
+    color: $white;
+    border: none;
+    @include arrow(bottom, center, $black-22, $black-22, 10px);
+}
+
+
+.tooltip--grey-80 {
+    background-color: $grey-80;
+    color: $white;
+    @include arrow(bottom, center, $grey-80, $grey-80, 10px);
+}
+
+.tooltip--grey-ed
+{
+    background-color: $grey-ed;
+    color: $grey-80;
+    @include arrow(bottom, center, $grey-ed, $grey-ed, 10px);
+}
+
+
+.tooltip--top-right
+{
+    background-color: $black-22;
+    color: $white;
+    @include arrow(right, top, $black-22, $black-22, 10px);
+    &:after
+    {
+        top: 40px;
+    }
+}
+
+.tooltip--top-center
+{
+    background-color: $white;
+    color: $black-22;
+    @include arrow(top, center, $white, $grey-cc, 10px);
+}
+
+.tooltip--myevents-home
+{
+
+}
+
+.tooltip--myevents-stagplans
+{
+
+    @include arrow(left, top, $white, $grey-ed, 7px);
+
+    &:after
+    {
+        left: 255px;
+    }
+}
+
+.tooltip--activity-category-details
+{
+    background-color: $grey-ed;
+    color: $black-22;
+    @include arrow(right, top, $grey-ed, $grey-ed, 23px);
+
+    &:after
+    {
+        top: 45%;
+    }
+}
+
+.tooltip--accommodation
+{
+    @include arrow(bottom, center, $grey-ed, $grey-ed, 10px);
+    background-color: $grey-ed;
+    color: $grey-80;
+    height: 33px;
+    padding-top: 7px;
+    border-radius: 2px;
+}

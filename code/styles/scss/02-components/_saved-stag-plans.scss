@@ -1,0 +1,89 @@
+$margin-among-images: 8px;
+
+.saved-stag-plan-wrapper
+{
+	// display: table;
+	// position: relative;
+	// &>ul
+	// {
+	// 	display: table-cell;
+	// 	vertical-align: top;
+	// 	list-style-type: none;
+	// 	padding-right: 25px;
+	// 	line-height: 35px;
+	// }
+}
+
+.saved-stag-plan
+{
+	background: #FFFFFF;
+
+	.left-col, .right-col
+	{
+		padding: 25px 25px 30px 25px;
+	}
+
+	.item-controls {
+	    position: absolute;
+	    display: table-cell;
+	    vertical-align: middle;
+	    top: 0;
+	    left: -70px;
+
+	    .control-item {
+	        font-size: $kilo-size;
+	        color: $grey-9e;
+	        line-height: 1;
+	        margin-bottom: 10px;
+	    }
+	}
+
+	.stag-plan-info
+	{
+		display: table-row;
+
+		.description
+		{
+			display: table-cell;
+			padding-top: 22px;
+			.stag-plan-name
+			{
+				font-weight: bold;
+			}
+		}
+
+		.price
+		{
+			.price-tag
+			{
+				font-weight: bold;
+
+				.from
+				{
+					font-size: $h6-size;
+				}
+
+				.pp
+				{
+					font-size: $h5-size;
+				}
+			}
+		}
+	}
+}
+
+@media #{$large} {
+	.saved-stag-plan {
+
+		.left-col, .right-col
+		{
+			display: table-cell;
+		}
+
+		.right-col
+		{
+			vertical-align: top;
+			border-left: 1px solid $grey-ed;
+		}
+	}
+}

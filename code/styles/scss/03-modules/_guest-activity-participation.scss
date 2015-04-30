@@ -1,0 +1,57 @@
+// Grid like table showing who's doing what under Manage Groups
+
+.guest-activity-particiation, .scrollable {
+    width: 100%;
+
+    table {
+        background-color: $white;
+        table-layout: fixed;
+
+
+        thead {
+            font-weight: bold;
+            border-bottom: 2px solid $grey-e6;
+
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+            border-top: 0;
+            border-right: 1px;
+            border-bottom: 1px;
+            border-left: 0;
+            border-color: $grey-e6;
+            border-style: solid;
+            width: 200px;
+
+            &:first-child {
+                text-align: left;
+                width: 230px;
+                background-color: $white;
+            }
+
+            &:last-child {
+                border-right: 0;
+            }
+
+        }
+
+        .pinned {
+            width: 230px;
+            overflow-x: hidden;
+
+            border-right: 1px solid $grey-e6;
+            border-left: 0px;
+
+            table {
+
+                th,td {
+                    white-space: normal;
+                }
+            }
+
+        }
+    }
+}

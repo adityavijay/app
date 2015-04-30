@@ -1,0 +1,240 @@
+.group-invite-wrapper
+{
+	//padding: 30px 118px 60px 118px;
+	padding: 30px 118px 60px 118px;
+	background-color: $grey-f2;
+}
+
+.invite-svg
+{
+	width: 170px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.invite-avatar-svg
+{
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.invite-title
+{
+	text-align: center;
+	font-size: 26px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.invite-response
+{
+	margin-bottom: 25px;
+	padding: 15px 10px;
+	text-align: center;
+	
+	.msg
+	{
+		vertical-align: super;
+	}
+
+	.invite-icon-joined
+	{
+		font-size: 25px;
+		margin-right: 5px;
+	}
+}
+
+.group-form-wrapper
+{
+	background: $white;
+}
+
+.group-update-title
+{
+	text-align: center;
+	line-height: 85px;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+.group-form
+{
+	display: table;
+	width: 100%;
+	
+	.left-col
+	{
+		padding-right: 30px;
+		display: table-cell;
+	}
+	
+	.right-col
+	{
+		padding-left: 30px;
+		border-left: 1px solid $grey-e6;
+		display: table-cell;
+		vertical-align: top;
+		position: relative;
+	}
+	
+	.submit-button
+	{
+		position: absolute;
+		bottom: 3px;
+	}
+
+	.form-label
+	{
+		text-align: right;
+		padding-right: 20px;
+		color: $black-22;
+	}
+}
+
+.update-form
+{
+	padding: 45px 45px 65px 80px;
+}
+
+.invite-form-wrapper
+{
+	padding:20px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.invite-form
+{
+	padding-left: 100px;	
+	
+	.left-col
+	{
+		width: 65%;
+	}
+}
+
+.group-popup-wrapper
+{
+	padding: 20px;
+	left: -95px;
+	top: 35px;
+    width: 210px;
+}
+
+.add-photo-wrapper
+{	
+	top: 42px;
+	left: 0px;
+	width: 240px;
+	padding: 20px;
+	background: $white;
+	@include arrow(top, left, $white, 15px);   
+	
+	&:after
+	{
+		left: 30px;
+	}
+
+	.add-photo
+	{
+		text-align: center;
+	}
+
+	.title 
+	{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.description
+	{
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+}
+
+
+.alert-photo-upload
+{
+	padding: 45px 65px 50px 65px;
+	text-align: center;
+
+	.alert-svg
+	{
+		margin: 0px auto;
+		width: 75px;
+		height: 60px;
+		margin-bottom: 20px;
+	}
+
+	.msg
+	{
+		font-size: 26px;
+	}
+
+	.description
+	{
+		margin: 30px 0px;
+		font-size: 14px;
+	}
+}
+
+
+.crop-popup-wrapper
+{
+	background: $white;
+	text-align: center;
+
+	.crop-title
+	{
+		font-size: 21px;
+		line-height: 80px;
+	}
+	
+	.crop-photo
+	{
+		padding-top: 30px;
+		padding-bottom: 65px;
+	}
+
+	.button-group-double
+	{
+		width: 435px;
+		margin: 30px auto 0px auto;
+	}
+}
+
+.group-invite-info-wrapper
+{
+	padding: 50px 0 85px 0;
+	text-align: center;
+}
+
+
+.invite-guest-process
+{
+	margin-top: 65px;
+
+	.list-item {
+        width: 135px;
+        
+        .size1 {
+            width: 72px;
+            height: 68px;
+        }
+
+        .size2 {
+            width: 85px;
+            height: 68px;
+        }
+
+        .item-text{
+            line-height: 1;
+            margin-top: 10px;
+            font-size: $h7-size;
+        }
+    }
+}

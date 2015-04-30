@@ -1,0 +1,85 @@
+// Page Header Logo bar
+
+.page-header__logo-bar {
+    position: relative;
+    border-bottom: 1px solid $grey-ed;
+    z-index: 99;
+
+    .call-us {
+        .contact-tel {
+
+        }
+    }
+
+    .header-logo {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .msp-toggle .btn{
+        font-size: $h5-size;
+        padding: 0 15px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .stag-plan-count-wrapper {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        // @include clearfix;
+
+        .icon {
+            font-size: $h3-size;
+        }
+
+
+        .plan-count {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 2px;
+            color: $white;
+            font-size: $h7-size;
+        }
+    }
+}
+
+@media #{$screen} {
+
+    .page-header__logo-bar {
+        height: 50px;
+        line-height: 50px;
+
+        .call-us {
+            display: none;
+        }
+
+        .header-logo {
+            width: 145px;
+            height: 35px;
+        }
+    }
+}
+
+@media #{$medium} {
+
+    .page-header__logo-bar {
+        height: 90px;
+        line-height: 90px;
+
+        .call-us {
+            display: block;
+        }
+
+        .header-logo {
+            width: 250px;
+            height: 58px;
+        }
+    }
+}
+

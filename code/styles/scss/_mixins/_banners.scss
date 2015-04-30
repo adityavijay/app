@@ -1,0 +1,28 @@
+/*
+    change banner size on screen width change
+*/
+
+@mixin bannerOnScreenWidthChange($banner-height, $icon-Font-Size,
+ $heading-font-size
+    , $subheading-font-size )
+{
+    .banner
+    {
+        height: $banner-height;
+
+        .banner-icon
+        {
+            font-size: $icon-Font-Size;
+        }
+
+        .banner-title
+        {
+            font-size: $heading-font-size;
+        }
+
+        .banner-sub-title
+        {
+            font-size: $subheading-font-size;
+        }
+    }
+}

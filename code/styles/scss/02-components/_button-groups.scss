@@ -1,0 +1,66 @@
+// Button Groups
+
+/* This controls the radius of the left and right edges. */
+/* Set to true or px value */
+$radius: true;
+
+/* This makes the buttons take up even space in their container */
+/* Set to the number of buttons in the group */
+$even: false;
+
+/* Controls how the buttons in the group float set to left or right */
+$float: left;
+
+.button-group { @include button-group-container;
+
+  display: inline-block;
+
+
+  .button-group__btn {
+    @include button-base;
+    // @include single-transition;
+    background: none;
+    font-size: .875em;
+    color: $black-22;
+    padding: 10px;
+    border: 1px solid $black-22;
+
+    &.with-text {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &:hover, &.is-active {
+        color: $white;
+        background-color: $black-22;
+    }
+
+
+
+   }
+
+  & > li { @include button-group-style($radius, $even, $float); }
+}
+
+.button-group-double {
+  @include button-group-container;
+  width: 100%;
+
+  .btn {
+    width: 100%;
+    padding: 9px 0;
+
+  }
+
+  & > li {
+    @include button-group-style(false, 2, $float);
+
+    &:first-child {
+      padding-right: 5px;
+    }
+
+    &:last-child {
+      padding-left: 5px;
+    }
+  }
+}

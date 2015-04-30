@@ -1,0 +1,42 @@
+// Itinerary View Lists (UL items part of the data-view modules)
+
+.itinerary__list {
+    margin: 0 auto;
+
+
+    .itinerary__list-item {
+        // position: relative;
+        // display: block;
+        // list-style-type: none;
+        // width: 100%;
+        // background-color: $white;
+        // margin-bottom: 25px;
+
+        &.deleted {
+            background: none;
+            border: 2px dashed $grey-cc;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+    }
+
+    .item-image-container {
+        width: 232px;
+    }
+
+    .remove-item {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+
+
+@media #{$medium} {
+    .itinerary__list {
+        max-width: 670px;
+    }
+
+}

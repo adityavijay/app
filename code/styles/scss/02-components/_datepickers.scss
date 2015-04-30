@@ -1,0 +1,220 @@
+
+/*
+	include datepicker classes and variables
+*/
+
+$datepicker-largebutton-height: 42px;
+$datepicker-largebutton-width: 343px;
+
+$datepicker-smallbutton-height: 42px;
+$datepicker-smallbutton-width: 252px;
+
+$calendar-width:343px;
+$calendar-header-width: ($calendar-width)-2px;
+
+.datepicker-wrapper
+{
+	margin-bottom:	20px;
+	display: inline-block;
+}
+
+.datepicker-btn
+{
+	padding: 13px 8px;
+	width: $calendar-width;
+	@include button-base;
+	cursor: inherit;
+    font-family: 'proxima-nova-bold';
+    font-size: .875em; // 14px / 16px (1em)
+    border-radius: 3px;
+    border: 0;
+    background-color: $black-22;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:link, &:visited,&:hover  {
+        background-color: $black-22;
+        color: $white;
+    }
+
+	@include arrow(bottom, center, $black-22, $black-22, 10px);
+}
+
+.datepicker-btn-plane
+{
+	padding: 13px 8px;
+	width: $calendar-width;
+	@include button-base;
+	cursor: inherit;
+    font-family: 'proxima-nova-bold';
+    font-size: .875em; 
+    border-radius: 3px;
+    border: 0;
+    background-color: $black-22;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:link, &:visited,&:hover  
+    {
+        background-color: $black-22;
+        color: $white;
+    }
+}
+
+.datepicker-text {
+	margin-right: 20px;
+
+}
+
+.datepicker-icons {
+	.calendar {
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+}
+
+.datepicker-btn--small
+{
+	height: $datepicker-smallbutton-height;
+	width: $datepicker-smallbutton-width;
+}
+
+.datepicker-btn--large
+{
+	height: $datepicker-largebutton-height;
+	width: $datepicker-largebutton-width;
+}
+
+.datepicker
+{
+	position: relative;
+	top: -5px;
+	z-index: 2;
+
+	.ui-datepicker-inline
+	{
+		// @include arrow($arrow-edge:top, $arrow-location:right,
+		// 	$arrow-color:$black-22, $size:8px);
+        position: absolute;
+		height: 403px;
+		width: $calendar-width;
+		background-color: white;
+		margin-top: 16px;
+		padding: 0px 0px;
+		border: 1px solid $grey-be;
+		-webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.10);
+   		-moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.10);
+   		box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.10);
+
+		.ui-datepicker-header
+		{
+			height: 122px;
+			width: $calendar-header-width;
+			background: $black-22;
+			padding-top: 40px;
+
+			.ui-datepicker-title
+			{
+				color: black;
+				background:	$grey-ed;
+				width: 170px;
+				height: 38px;
+				font-weight: bold;
+				padding-top: 4px;
+				position: relative;
+				left: 50px;
+			}
+
+			.ui-datepicker-prev:before
+			{
+				content: "<";
+				color:white;
+			}
+
+			.ui-datepicker-next:after
+			{
+				content: ">";
+				color: white;
+			}
+			.ui-datepicker-prev
+			{
+				left: 58px;
+			}
+
+			.ui-datepicker-next
+			{
+				right: 42px;
+			}
+
+			.ui-datepicker-prev, .ui-datepicker-next
+			{
+				top: 48px;
+			}
+
+		}
+
+		.ui-datepicker-calendar
+		{
+			max-width: 217px;
+			min-height: 190px;
+			top: 29px;
+			left: 60px;
+			position: relative;
+			border: none;
+
+			tr
+			{
+				background: none;
+			}
+
+			&>thead
+			{
+				background: none;
+				tr
+				{
+					th:nth-child(5), th:nth-child(6)
+					{
+						color: $brand;
+					}
+				}
+			}
+
+			&>tbody
+			{
+				background-color: $grey-ed;
+				
+					td
+					{
+						border: solid 1px $grey-e0;
+						a
+						{
+							text-align: center;
+							color: black;
+							&:hover
+							{
+								color: $brand;
+							}
+						}
+					}
+
+					td:nth-child(5), td:nth-child(6)
+					{
+						background:	$white;
+
+						&.ui-datepicker-current-day
+						{
+							background: $brand;
+						}
+					}				
+			}
+		}
+	}
+}
+
+/*To show current selected day in calendar*/
+.ui-datepicker-current-day
+{
+	background: $brand;
+}

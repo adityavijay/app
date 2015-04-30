@@ -1,0 +1,33 @@
+// Grid class. This keeps each section within the max width of the website
+// Full width sections like banners are not kept inside this grid class as
+
+
+.grid {
+	margin: 0 auto;
+	max-width: $row-width;
+}
+
+@media #{$screen} {
+    .grid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media #{$medium} {
+    .grid {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+}
+
+@media #{$large} {
+    .grid {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+

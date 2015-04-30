@@ -1,0 +1,54 @@
+// Icons. The icon is based on a grid of 16px so wil look sharp at intervals thereof
+
+.icon {
+    font-size: 1em; // 16px
+    display: inline-block;
+
+    &.small {
+        font-size: .75em; //12px;
+    }
+
+    &.medium {
+        font-size: 1.5em; //24px;
+    }
+
+    &.large {
+        font-size: 2em; // 32px;
+    }
+}
+
+
+
+.icon-stacked {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.icon-with-text {
+    margin-right: 5px;
+}
+
+.icon-with-text-rev {
+    margin-left: 5px;
+}
+
+
+// Filled and outline icons. Filled/state icon must be in the HTML data-icon2 attribute
+
+.active {
+    .state-icon {
+        .icon:before {
+            content: attr(data-icon2);
+        }
+    }
+}
+
+.state-icon {
+
+    &:hover, {
+        .icon:before {
+            content: attr(data-icon2);
+        }
+    }
+}

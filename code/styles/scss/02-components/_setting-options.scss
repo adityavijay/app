@@ -1,0 +1,19 @@
+
+.setting-options
+{
+	margin-bottom: 0px;
+	line-height: 37px;
+	width: 150px;
+
+	&>li
+	{
+		border-bottom: solid 1px $grey-35;
+	}
+
+	&>li:last-child
+	{
+		border-bottom: none;
+	}
+}
+
+

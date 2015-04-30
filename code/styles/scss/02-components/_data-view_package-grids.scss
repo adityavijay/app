@@ -1,0 +1,20 @@
+// Data View Package Grids (UL items part of the data-view modules)
+
+.data-view__package-grid {
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+
+
+@media #{$medium} {
+    .data-view__package-grid {
+        max-width: 696px;
+    }
+}
+
+@media #{$large} {
+    .data-view__package-grid {
+        max-width: 100%;
+    }
+}

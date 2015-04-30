@@ -1,0 +1,14 @@
+// Show / Hide content E.G Accordian style
+
+.content-toggle {
+	display: none;
+	height: 0;
+
+	transition: all .3s ease;
+
+	&.open {
+		height: 100%;
+		display: block;
+	}
+}
+

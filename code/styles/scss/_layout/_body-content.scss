@@ -1,0 +1,14 @@
+// Main body content
+
+@media #{$screen} {
+    .body-content {
+        padding-top: 50px;
+    }
+}
+
+@media #{$medium} {
+    .body-content {
+        padding-top: 130px;
+    }
+}
+
